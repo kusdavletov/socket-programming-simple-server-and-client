@@ -43,3 +43,5 @@ There are two commonly used socket types ```Stream Sockets``` and ```Datagram So
 Interaction between server and client:
 ![alt text](https://github.com/kusdavletov/C-Socket-Programming-Simple-Server-and-Client/blob/master/pics/scheme1.png)
 
+https://medium.com/@jongyunlee/socket-programming-5ad3638fdddf
+
