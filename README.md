@@ -45,9 +45,9 @@ There are two commonly used socket types ```Stream Sockets``` and ```Datagram So
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/19291492/44955906-363dae80-aef6-11e8-9795-161a90f30b1e.png"/>
-  
-  Interaction between server and client
 </p>
+
+<p align="center">Interaction between server and client</p>
 
 ### Preliminary knowledge before programming
 
