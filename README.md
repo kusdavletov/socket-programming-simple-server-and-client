@@ -19,7 +19,9 @@ If you are familiar to socket programming, then jump to Let’s Practice Part
 * You can just imagine that two different processes have files (socket) and the they read received data from socket and write to socket for sending data to network
 * So, socket has file descriptor, which is just an integer to identify opened file
 
-![scheme](https://user-images.githubusercontent.com/19291492/44955905-363dae80-aef6-11e8-9719-ac759adbdfaa.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/19291492/44955905-363dae80-aef6-11e8-9719-ac759adbdfaa.png"/>
+</p>
 
 ### 2. Socket Types
 
@@ -41,8 +43,10 @@ There are two commonly used socket types ```Stream Sockets``` and ```Datagram So
 * Accept a connection with the ```accept()``` system call. This call typically blocks the connection until a client connects with the server
 * Send and receive data using the ```read()``` and ```write()``` system calls
 
-Interaction between server and client:
-![scheme1](https://user-images.githubusercontent.com/19291492/44955906-363dae80-aef6-11e8-9795-161a90f30b1e.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/19291492/44955906-363dae80-aef6-11e8-9795-161a90f30b1e.png"/>
+  Interaction between server and client
+</p>
 
 ### Preliminary knowledge before programming
 
@@ -317,13 +321,15 @@ you can compile code with command line in the directory of project :
 
 - Sample Output
 
-![scheme2](https://user-images.githubusercontent.com/19291492/44955907-36d64500-aef6-11e8-886e-1fcf77b377c4.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/19291492/44955907-36d64500-aef6-11e8-886e-1fcf77b377c4.png"/>
+  client
+</p>
 
-client
-
-![scheme3](https://user-images.githubusercontent.com/19291492/44955908-36d64500-aef6-11e8-9888-ab63856ad2d4.png)
-
-server
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/19291492/44955908-36d64500-aef6-11e8-9888-ab63856ad2d4.png"/>
+  server
+</p>
 
 ## 7. Practice more! : multi user server
 
@@ -361,14 +367,17 @@ while (1) {
 
 Output :
 
-![scheme4](https://user-images.githubusercontent.com/19291492/44955909-36d64500-aef6-11e8-9345-1033eb29599c.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/19291492/44955909-36d64500-aef6-11e8-9345-1033eb29599c.png"/>
+  client1
+</p>
 
-client1
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/19291492/44955910-36d64500-aef6-11e8-8f04-3a7a2deb1b6f.png"/>
+  client2
+</p>
 
-![scheme5](https://user-images.githubusercontent.com/19291492/44955910-36d64500-aef6-11e8-8f04-3a7a2deb1b6f.png)
-
-client2
-
-![scheme6](https://user-images.githubusercontent.com/19291492/44955911-376edb80-aef6-11e8-929e-56667b372253.png)
-
-multi user server
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/19291492/44955911-376edb80-aef6-11e8-929e-56667b372253.png"/>
+  multi user server
+</p>
