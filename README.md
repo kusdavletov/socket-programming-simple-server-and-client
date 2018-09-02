@@ -6,7 +6,6 @@ server_single.c - singlethreaded server
 
 client.c - client
 
-
 ## Socket Programming
 
 This is pre-project tutorial for socket programming
@@ -20,7 +19,7 @@ If you are familiar to socket programming, then jump to Let’s Practice Part
 * You can just imagine that two different processes have files (socket) and the they read received data from socket and write to socket for sending data to network
 * So, socket has file descriptor, which is just an integer to identify opened file
 
-![alt text](https://github.com/kusdavletov/C-Socket-Programming-Simple-Server-and-Client/blob/master/pics/scheme.png)
+![scheme](https://user-images.githubusercontent.com/19291492/44955905-363dae80-aef6-11e8-9719-ac759adbdfaa.png)
 
 ### 2. Socket Types
 
@@ -29,11 +28,13 @@ There are two commonly used socket types ```Stream Sockets``` and ```Datagram So
 ### 3. Client Process & Server Process
 
 #### Client : Typically request to server for information.
+
 * Create a socket with the ```socket()``` system call
 * Connect socket to the address of the server using the ```connect()``` system call
 * Send and receive data. There are a number of ways to do this, but the simplest way is to use the ```read()``` and ```write()``` system calls
 
 #### Server : Takes request from the clients, perform required processing, and send it to the client
+
 * Create a socket with the ```socket()``` system call
 * Bind the socket to an address (IP + port) using the ```bind()``` system call.
 * Listen for connections with the ```listen()``` system call
@@ -41,11 +42,12 @@ There are two commonly used socket types ```Stream Sockets``` and ```Datagram So
 * Send and receive data using the ```read()``` and ```write()``` system calls
 
 Interaction between server and client:
-![alt text](https://github.com/kusdavletov/C-Socket-Programming-Simple-Server-and-Client/blob/master/pics/scheme1.png)
+![scheme1](https://user-images.githubusercontent.com/19291492/44955906-363dae80-aef6-11e8-9795-161a90f30b1e.png)
 
 ### Preliminary knowledge before programming
 
 ## 1. Structures
+
 You will use socket functions, and most of the socket functions use socket address structures.
 
 - `sockaddr` : generic socket address structure
@@ -72,7 +74,7 @@ struct sockaddr_in {
 }
 ```
 
-`in_addr` : structure used in abote sockaddr_in
+- `in_addr` : structure used in abote sockaddr_in
 
 ```objectivec
 struct in_addr {
@@ -94,6 +96,7 @@ struct hostent {
 ```
 
 ## 2. Network Byte Orders
+
 All computers doesn’t store bytes in same order. → Two different ways
 
 - Little Endian : low-order byte is stored on the starting addresses
@@ -111,7 +114,9 @@ ntohs() : Network to Host Short
 ```
 
 ## 3. IP Address Function
+
 These functions manipulate IP addresses between ASCII strings and network byte ordered binary values.
+
 - int **inet_aton**(const char *strptr, struct in_addr *addrptr)
 
 ```objectivec
@@ -141,6 +146,7 @@ printf("IP Address is : %s\n", ip);
 ```
 
 ## 4. Socket Functions
+
 (you can use bold scripted parameter for the first use)
 
 1. `socket`
@@ -240,6 +246,7 @@ int close( int sockfd );
 ### 5. Additional Functions
 
 1. `fork`
+
 - creates new process which is exact copy of current process
 - current process is parent, and copied process is child
 
@@ -253,6 +260,7 @@ int fork(void);
 - fork returns 0 when it is child process, and returns child process id when it is parent process. If it is failed, returns -1
 
 2. `bzero`
+
 - place *n*bytes of null byte to string s
 
 ```objectivec
@@ -260,6 +268,7 @@ void bzero(void *s, int nbyte);
 ```
 
 3. `bcmp`
+
 - compare nbytes of byte string s1 and byte string s2
 
 ```objectivec
@@ -269,6 +278,7 @@ int bcmp(const void *s1, const void *s2, int nbyte);
 returns 0 if identical, 1 otherwise.
 
 4. `bcopy`
+
 - copy nbytes of byte string s1 to byte string s2
 
 ```objectivec
@@ -276,6 +286,7 @@ void bcopy(const void *s1, void *s2, int nbyte);
 ```
 
 5. `memset`
+
 - allocate memory and return pointer which points to the newly allocated memory
 
 ```objectivec
@@ -305,9 +316,13 @@ you can compile code with command line in the directory of project :
 ```
 
 - Sample Output
+
 ![scheme2](https://user-images.githubusercontent.com/19291492/44955907-36d64500-aef6-11e8-886e-1fcf77b377c4.png)
+
 client
+
 ![scheme3](https://user-images.githubusercontent.com/19291492/44955908-36d64500-aef6-11e8-9888-ab63856ad2d4.png)
+
 server
 
 ## 7. Practice more! : multi user server
@@ -347,13 +362,13 @@ while (1) {
 Output :
 
 ![scheme4](https://user-images.githubusercontent.com/19291492/44955909-36d64500-aef6-11e8-9345-1033eb29599c.png)
+
 client1
 
 ![scheme5](https://user-images.githubusercontent.com/19291492/44955910-36d64500-aef6-11e8-8f04-3a7a2deb1b6f.png)
+
 client2
 
 ![scheme6](https://user-images.githubusercontent.com/19291492/44955911-376edb80-aef6-11e8-929e-56667b372253.png)
+
 multi user server
-
-
-Ref: https://medium.com/@jongyunlee/socket-programming-5ad3638fdddf
