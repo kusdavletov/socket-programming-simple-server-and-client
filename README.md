@@ -1,4 +1,4 @@
-# C++ Socket Programming: Simple Server and Client
+# C Socket Programming: Simple Server and Client
 
 server.c - multithreaded server 
 
