@@ -324,15 +324,15 @@ you can compile code with command line in the directory of project :
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/19291492/44955907-36d64500-aef6-11e8-886e-1fcf77b377c4.png"/>
-  
-  client
 </p>
+
+<p align="center">client</p>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/19291492/44955908-36d64500-aef6-11e8-9888-ab63856ad2d4.png"/>
-  
-  server
 </p>
+
+<p align="center">server</p>
 
 ## 7. Practice more! : multi user server
 
@@ -372,18 +372,18 @@ Output :
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/19291492/44955909-36d64500-aef6-11e8-9345-1033eb29599c.png"/>
-  
-  client1
 </p>
+
+<p align="center">client1</p>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/19291492/44955910-36d64500-aef6-11e8-8f04-3a7a2deb1b6f.png"/>
-  
-  client2
 </p>
+
+<p align="center">client2</p>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/19291492/44955911-376edb80-aef6-11e8-929e-56667b372253.png"/>
-  
-  multi user server
 </p>
+
+<p align="center">multi user server</p>
