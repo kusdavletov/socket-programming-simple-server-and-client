@@ -60,7 +60,7 @@ int main( int argc, char *argv[] ) {
     char *buffer = malloc(buffer_len * sizeof(char));
     char *response = NULL;
     time_t last_operation;
-    __pid_t pid = -1;
+    pid_t pid = -1;
 
     while (1) {
         int client_fd = accept(server_fd, (struct sockaddr *) &client_sockaddr, &client_socklen);
